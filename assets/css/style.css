@@ -631,15 +631,25 @@ ul {
 }
 
 .expert-icon {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     margin: 0 auto var(--spacing-md);
-    background-color: var(--primary-green);
+    background-color: var(--peach-light);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--bg-white);
+    color: var(--primary-green);
+    overflow: hidden;
+    border: 3px solid var(--primary-green);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.expert-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .expert-quote h3 {
@@ -1302,6 +1312,10 @@ ul {
     width: 20px;
     height: 20px;
     color: var(--bg-white);
+}
+
+.footer-social svg,
+.footer-social svg path {
     fill: currentColor;
     stroke: currentColor;
 }
@@ -1327,6 +1341,10 @@ ul {
     width: 20px;
     height: 20px;
     color: var(--bg-white);
+}
+
+.social-links svg,
+.social-links svg path {
     fill: currentColor;
     stroke: currentColor;
 }
@@ -1728,11 +1746,21 @@ ul {
     justify-content: center;
     color: var(--primary-green);
     margin-bottom: var(--spacing-md);
+    overflow: hidden;
+    border: 3px solid var(--primary-green);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .expert-icon svg {
     width: 40px;
     height: 40px;
+}
+
+.expert-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .expert-quote h3 {
