@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.aldeiaescola.com.br/sitemap.xml
+
+# Disallow admin areas (if applicable in the future)
+# Disallow: /admin/
+
