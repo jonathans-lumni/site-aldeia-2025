@@ -19,8 +19,8 @@
     --success-color: #4CAF50;
     --error-color: #F44336;
     
-    --font-primary: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    --font-heading: 'Playfair Display', serif;
+    --font-primary: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
@@ -290,7 +290,7 @@ ul {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(44, 44, 44, 0.4);
+    background: rgba(44, 44, 44, 0.5);
     z-index: -1;
 }
 
@@ -334,7 +334,7 @@ ul {
     color: var(--bg-white);
     margin-bottom: var(--spacing-md);
     line-height: 1.2;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .hero-description {
@@ -342,7 +342,7 @@ ul {
     color: var(--bg-white);
     margin-bottom: var(--spacing-lg);
     line-height: 1.8;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .hero-buttons {
@@ -766,6 +766,7 @@ ul {
 .content-section.highlight .section-title,
 .content-section.highlight p {
     color: var(--bg-white);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 .highlight-text {
@@ -1261,12 +1262,14 @@ ul {
     font-family: var(--font-heading);
     margin-bottom: var(--spacing-md);
     color: var(--bg-white);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .footer-section p {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
     line-height: 1.8;
     margin-bottom: var(--spacing-sm);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 }
 
 .footer-section ul li {
@@ -1274,12 +1277,14 @@ ul {
 }
 
 .footer-section ul li a {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 }
 
 .footer-section ul li a:hover {
     color: var(--bg-white);
     text-decoration: underline;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .footer-social {
@@ -1353,7 +1358,8 @@ ul {
     text-align: center;
     padding-top: var(--spacing-md);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.75);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* ========================================
@@ -1454,6 +1460,7 @@ ul {
 .page-hero .page-title,
 .page-hero .page-subtitle {
     color: var(--bg-white);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 .page-title {
@@ -1490,6 +1497,7 @@ ul {
 .content-section.highlight h2,
 .content-section.highlight p {
     color: var(--bg-white);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 .content-wrapper {
@@ -2028,12 +2036,14 @@ ul {
     font-size: 2.5rem;
     margin-bottom: var(--spacing-md);
     color: var(--bg-white);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 .cta-content p {
     font-size: 1.1rem;
     margin-bottom: var(--spacing-lg);
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .cta-section .btn-primary {
