@@ -251,7 +251,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Blog</h2>
-                <p class="section-subtitle">Leia nossos artigos</p>
+                <p class="section-subtitle">Leia nossos artigos mais acessados</p>
             </div>
             <div class="blog-grid" id="homeBlogGrid">
                 <!-- Posts serão carregados via JavaScript -->
@@ -436,9 +436,12 @@
                 const container = document.getElementById('homeBlogGrid');
                 
                 if (!container) return;
+
+                // Sort posts by date (newest first)
+                const sortedPosts = [...data.posts].sort((a, b) => new Date(b.date) - new Date(a.date));
                 
                 // Get only featured posts, limit to 3
-                const featuredPosts = data.posts.filter(post => post.featured).slice(0, 3);
+                const featuredPosts = sortedPosts.filter(post => post.featured).slice(0, 3);
                 
                 container.innerHTML = '';
                 
