@@ -85,7 +85,10 @@
 
     <!-- Hero Section -->
     <section class="hero" id="inicio">
-        <div class="hero-background" style="background-image: url('assets/images/9.jpg'); background-size: cover; background-position: center;">
+        <div class="hero-background hero-slider">
+            <div class="hero-slide active" style="background-image: url('assets/images/background.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('assets/images/background2.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('assets/images/background3.jpg');"></div>
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
@@ -114,9 +117,7 @@
                 <div class="belief-card">
                     <div class="belief-image">
                         <div class="belief-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                            </svg>
+                            <img src="assets/images/emmi-pikler.jpeg" alt="Emmi Pikler">
                         </div>
                     </div>
                     <h3>Abordagem Pikler</h3>
@@ -126,10 +127,7 @@
                 <div class="belief-card">
                     <div class="belief-image">
                         <div class="belief-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                <circle cx="12" cy="10" r="3"></circle>
-                            </svg>
+                            <img src="assets/images/rudolf-steiner.jpg" alt="Rudolf Steiner">
                         </div>
                     </div>
                     <h3>Pedagogia Waldorf</h3>
@@ -152,7 +150,7 @@
                     <a href="sobre.html" class="btn btn-outline">Saiba mais</a>
                 </div>
                 <div class="about-image">
-                    <img src="assets/images/5.JPG" alt="Ambiente interno da Aldeia">
+                    <img src="assets/images/Equipe/21.jpg" alt="Ambiente interno da Aldeia">
                 </div>
             </div>
         </div>
@@ -163,7 +161,7 @@
         <div class="container">
             <div class="space-wrapper">
                 <div class="space-image">
-                    <img src="assets/images/6.jpg" alt="Espaço externo da Aldeia">
+                    <img src="assets/images/Atividades com as crianças/11.jpg" alt="Espaço externo da Aldeia">
                 </div>
                 <div class="space-text">
                     <h2 class="section-title">Nossa Aldeia</h2>
@@ -171,6 +169,35 @@
                     <p>Cada pedacinho da nossa Aldeia foi pensado em sintonia com o nosso projeto pedagógico. Temos dois ambientes principais, o externo e o interno. O parque externo promove a exploração dos movimentos e dos sentidos em consonância com os elementos da natureza.</p>
                     <p>Nossos espaços são cuidadosamente planejados para estimular a curiosidade, a exploração e o desenvolvimento motor, cognitivo e emocional das crianças, sempre em conexão com a natureza.</p>
                     <a href="nosso-espaco.html" class="btn btn-outline">Conheça nosso espaço</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vídeo -->
+    <section class="video-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Conheça a Aldeia</h2>
+                <p class="section-subtitle">Veja um pouco do nosso dia a dia</p>
+            </div>
+            <div class="video-slider-wrapper">
+                <div class="video-wrapper">
+                    <video controls poster="assets/images/background.jpg" class="featured-video" id="mainVideo">
+                        <source src="assets/videos/1.mp4" type="video/mp4">
+                        Seu navegador não suporta o elemento de vídeo.
+                    </video>
+                </div>
+                <div class="video-navigation">
+                    <button class="video-nav-btn active" data-video="1" aria-label="Vídeo 1">
+                        <span class="video-nav-number">1</span>
+                    </button>
+                    <button class="video-nav-btn" data-video="2" aria-label="Vídeo 2">
+                        <span class="video-nav-number">2</span>
+                    </button>
+                    <button class="video-nav-btn" data-video="3" aria-label="Vídeo 3">
+                        <span class="video-nav-number">3</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -186,34 +213,21 @@
             <div class="pedagogy-grid">
                 <div class="pedagogy-card">
                     <div class="pedagogy-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                        </svg>
+                        <img src="assets/images/Parque e área externa verde/12.jpg" alt="Vínculo Afetivo">
                     </div>
                     <h3>Vínculo Afetivo</h3>
                     <p>Construímos relações baseadas no respeito, na escuta atenta e no cuidado genuíno com cada criança. O vínculo afetivo é a base de todo aprendizado.</p>
                 </div>
                 <div class="pedagogy-card">
                     <div class="pedagogy-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                            <path d="M12 11v6"></path>
-                            <path d="M9 14l3-3 3 3"></path>
-                        </svg>
+                        <img src="assets/images/Parque e área externa verde/3.jpg" alt="Liberdade e Autonomia">
                     </div>
                     <h3>Liberdade e Autonomia</h3>
                     <p>Respeitamos o movimento livre e a iniciativa da criança. Criamos oportunidades para que ela descubra suas capacidades e desenvolva sua independência com segurança.</p>
                 </div>
                 <div class="pedagogy-card">
                     <div class="pedagogy-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                            <path d="M2 12l10 5 10-5"></path>
-                            <path d="M2 17l10 5 10-5"></path>
-                        </svg>
+                        <img src="assets/images/Parque e área externa verde/8.jpg" alt="Contato com a Natureza">
                     </div>
                     <h3>Contato com a Natureza</h3>
                     <p>O contato diário com a natureza permite que a criança se conheça como parte do todo, desenvolvendo consciência ambiental e conexão com os elementos naturais.</p>

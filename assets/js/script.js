@@ -225,3 +225,65 @@ if ('IntersectionObserver' in window) {
     });
 }
 
+// ========================================
+// HERO SLIDER
+// ========================================
+function initHeroSlider() {
+    const heroSlides = document.querySelectorAll('.hero-slide');
+    if (heroSlides.length > 0) {
+        // Ensure first slide is visible
+        heroSlides[0].classList.add('active');
+        
+        let currentSlide = 0;
+        
+        function nextSlide() {
+            heroSlides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % heroSlides.length;
+            heroSlides[currentSlide].classList.add('active');
+        }
+        
+        // Change slide every 5 seconds
+        setInterval(nextSlide, 5000);
+    }
+}
+
+// Initialize when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initHeroSlider);
+} else {
+    initHeroSlider();
+}
+
+// ========================================
+// VIDEO NAVIGATION
+// ========================================
+function initVideoNavigation() {
+    const mainVideo = document.getElementById('mainVideo');
+    const videoNavButtons = document.querySelectorAll('.video-nav-btn');
+    
+    if (!mainVideo || videoNavButtons.length === 0) return;
+    
+    videoNavButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const videoNumber = this.getAttribute('data-video');
+            const videoSource = `assets/videos/${videoNumber}.mp4`;
+            
+            // Update active button
+            videoNavButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Update video source
+            mainVideo.pause();
+            mainVideo.src = videoSource;
+            mainVideo.load();
+        });
+    });
+}
+
+// Initialize video navigation when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initVideoNavigation);
+} else {
+    initVideoNavigation();
+}
+
